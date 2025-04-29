@@ -51,23 +51,16 @@ identifier = "blog"
 name = "Blog"
 url = "/blog/"
 weight = 30
-
-# Parent Menu Item (Dropdown Title)
 [[menu.main]]
 identifier = "about-me"
 name = "About"
-# No URL - makes it a dropdown header
 weight = 40
-
-# Child Item 1: About Page
 [[menu.main]]
 identifier = "about-page"
 name = "About Me"
 url = "/about/"
 parent = "about-me"
 weight = 10
-
-# Child Item 2: Uses Page
 [[menu.main]]
 identifier = "uses-page"
 name = "Uses"
