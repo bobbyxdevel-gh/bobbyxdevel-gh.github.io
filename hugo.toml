@@ -1,6 +1,6 @@
 baseURL = 'https://bobbyx.de/'
 languageCode = 'en-us'
-title = 'Bobbyx.de'
+title = 'bobbyx.de'
 theme = 'PaperMod'
 
 [params]
