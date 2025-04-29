@@ -8,7 +8,7 @@ defaultTheme = "auto" # auto, light, dark
 
 [params.profileMode]
 enabled = true
-title = "bobbyx.de" # Shown under image
+title = "bobbyx.de"                                   # Shown under image
 subtitle = "Showcasing dotfiles, docs, and thoughts."
 # imageUrl = "<relative path to image>" # Optional
 # imageWidth = 120 # Optional
@@ -36,23 +36,23 @@ name = "github"
 url = "https://github.com/bobbyxdevel-gh" # Replace with your username
 
 [menu]
-  [[menu.main]]
-    identifier = "dotfiles"
-    name = "Dotfiles"
-    url = "/dotfiles/"
-    weight = 10
-  [[menu.main]]
-    identifier = "docs"
-    name = "Docs"
-    url = "/docs/"
-    weight = 20
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 30
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 40
+[[menu.main]]
+identifier = "dotfiles"
+name = "Dotfiles"
+url = "/dotfiles/"
+weight = 10
+[[menu.main]]
+identifier = "docs"
+name = "Docs"
+url = "/docs/"
+weight = 20
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 30
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 40
