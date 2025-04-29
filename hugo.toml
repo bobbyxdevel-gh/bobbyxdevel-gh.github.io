@@ -4,31 +4,36 @@ title = 'Bobbyx.de'
 theme = 'PaperMod'
 
 [params]
-  defaultTheme = "auto" # auto, light, dark
-  profileMode:
-    enabled = true
-    title = "Bobbyx.de" # Shown under image
-    subtitle = "Showcasing dotfiles, docs, and thoughts"
-    # imageUrl = "<relative path to image>" # Optional
-    # imageWidth = 120 # Optional
-    # imageHeight = 120 # Optional
-    # imageTitle = "My Profile Picture" # Optional
-    [[params.profileMode.buttons]]
-      name = "Dotfiles"
-      url = "/dotfiles"
-    [[params.profileMode.buttons]]
-      name = "Docs"
-      url = "/docs"
-    [[params.profileMode.buttons]]
-      name = "Blog"
-      url = "/blog"
-    [[params.profileMode.buttons]]
-      name = "About"
-      url = "/about"
+defaultTheme = "auto" # auto, light, dark
 
-  [[params.socialIcons]] # Optional
-    name = "github"
-    url = "https://github.com/bobbyxdevel-gh" # Replace with your username
+[params.profileMode]
+enabled = true
+title = "Bobbyx.de" # Shown under image
+subtitle = "Showcasing dotfiles, docs, and thoughts"
+# imageUrl = "<relative path to image>" # Optional
+# imageWidth = 120 # Optional
+# imageHeight = 120 # Optional
+# imageTitle = "My Profile Picture" # Optional
+
+[[params.profileMode.buttons]]
+name = "Dotfiles"
+url = "/dotfiles"
+
+[[params.profileMode.buttons]]
+name = "Docs"
+url = "/docs"
+
+[[params.profileMode.buttons]]
+name = "Blog"
+url = "/blog"
+
+[[params.profileMode.buttons]]
+name = "About"
+url = "/about"
+
+[[params.socialIcons]] # Optional
+name = "github"
+url = "https://github.com/bobbyxdevel-gh" # Replace with your username
 
 [menu]
   [[menu.main]]
