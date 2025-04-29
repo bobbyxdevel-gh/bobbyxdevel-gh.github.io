@@ -1,5 +1,4 @@
 baseURL = 'https://bobbyx.de/'
-\
 languageCode = 'en-us'
 title = 'Bobbyx.de'
 theme = 'PaperMod'
