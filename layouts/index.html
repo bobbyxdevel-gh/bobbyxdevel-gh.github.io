@@ -1,34 +1,26 @@
-{{ define "main" }}
+{{ define "main" }} {{- /* Include the standard profile mode partial */ -}} {{-
+if .Site.Params.profileMode.enabled -}} {{- partial "index_profile.html" . -}}
+{{- else -}} {{- partial "home_info.html" . -}} {{- end }}
 
-{{- /* Include the standard profile mode partial */ -}}
-{{- if .Site.Params.profileMode.enabled -}}
-{{- partial "index_profile.html" . -}}
-{{- else -}}
-{{- partial "home_info.html" . -}}
-{{- end }}
-
-<hr/>
+<hr />
 
 <div class="recent-posts">
-    {{- $sections := slice "dotfiles" "docs" "blog" -}}
-    {{- range $sections }}
-        {{- $sectionPath := printf "/%s/" . }}
-        {{- $pages := where site.RegularPages "Section" . | first 5 }}
-        {{- if $pages }}
-            <section class="recent-posts-section">
-                <h2>Recent {{ humanize . }}</h2>
-                <ul class="archive-list">
-                    {{- range $pages }}
-                    <li>
-                        <span class="meta">{{ .Date.Format "Jan 2, 2006" }}</span>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                    {{- end }}
-                </ul>
-                <p><a href="{{ $sectionPath }}">See all {{ humanize . }}...</a></p>
-            </section>
-        {{- end }}
-    {{- end }}
+    {{- $sections := slice "dotfiles" "docs" "blog" -}} {{- range $sections }}
+    {{- $sectionPath := printf "/%s/" . }} {{- $pages := where site.RegularPages
+    "Section" . | first 5 }} {{- if $pages }}
+    <section class="recent-posts-section">
+        <h2>Recent {{ humanize . }}</h2>
+        <ul class="archive-list">
+            {{- range $pages }}
+            <li>
+                <span class="meta">{{ .Date.Format "Jan 2, 2006" }}</span>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+        </ul>
+        <p><a href="{{ $sectionPath }}">See all {{ humanize . }}...</a></p>
+    </section>
+    {{- end }} {{- end }}
 </div>
 
 {{ end }}

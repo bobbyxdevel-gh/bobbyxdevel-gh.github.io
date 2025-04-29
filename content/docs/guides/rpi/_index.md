@@ -10,12 +10,12 @@ This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a 
 
 ## Prerequisites
 
-* Raspberry Pi 4 Model B
-* MicroSD card (16GB or larger recommended)
-* Power supply for Raspberry Pi 4
-* Computer with an SD card reader
-* Ethernet cable or Wi-Fi network credentials
-* SSH client on your computer (e.g., PuTTY for Windows, Terminal for macOS/Linux)
+- Raspberry Pi 4 Model B
+- MicroSD card (16GB or larger recommended)
+- Power supply for Raspberry Pi 4
+- Computer with an SD card reader
+- Ethernet cable or Wi-Fi network credentials
+- SSH client on your computer (e.g., PuTTY for Windows, Terminal for macOS/Linux)
 
 ## Step 1: Download Raspberry Pi OS Lite
 
@@ -42,16 +42,16 @@ This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a 
 1. If you plan to use Wi-Fi, create another file named `wpa_supplicant.conf` in the root directory of the boot partition.
 2. Open this file with a plain text editor and add the following content, replacing `"Your_SSID"` and `"Your_Password"` with your actual Wi-Fi network name and password:
 
-    ```conf
-    country=US # Change to your 2-letter ISO country code (e.g., GB, DE, FR)
-    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-    update_config=1
+   ```conf
+   country=US # Change to your 2-letter ISO country code (e.g., GB, DE, FR)
+   ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+   update_config=1
 
-    network={
-        ssid="Your_SSID"
-        psk="Your_Password"
-    }
-    ```
+   network={
+       ssid="Your_SSID"
+       psk="Your_Password"
+   }
+   ```
 
 3. Save the file.
 
@@ -66,24 +66,24 @@ This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a 
 
 There are several ways to find the IP address:
 
-* **Router Interface:** Log in to your router's web interface and look for connected devices. The Raspberry Pi might appear with the hostname "raspberrypi".
-* **Network Scanner:** Use a network scanning tool (like `nmap` on Linux/macOS or "Advanced IP Scanner" on Windows) to scan your network for devices.
-* **Bonjour/Avahi:** If your computer supports it, you might be able to connect using the hostname `raspberrypi.local`.
+- **Router Interface:** Log in to your router's web interface and look for connected devices. The Raspberry Pi might appear with the hostname "raspberrypi".
+- **Network Scanner:** Use a network scanning tool (like `nmap` on Linux/macOS or "Advanced IP Scanner" on Windows) to scan your network for devices.
+- **Bonjour/Avahi:** If your computer supports it, you might be able to connect using the hostname `raspberrypi.local`.
 
 ## Step 7: Connect via SSH
 
 1. Open your SSH client (Terminal or PuTTY).
 2. Use the following command, replacing `<IP_Address>` with the IP address you found:
 
-    ```bash
-    ssh pi@<IP_Address>
-    ```
+   ```bash
+   ssh pi@<IP_Address>
+   ```
 
-    Or, if using the hostname:
+   Or, if using the hostname:
 
-    ```bash
-    ssh pi@raspberrypi.local
-    ```
+   ```bash
+   ssh pi@raspberrypi.local
+   ```
 
 3. You might see a security warning about the host key. Type `yes` to continue.
 4. When prompted for the password, the default password is `raspberry`.
@@ -93,30 +93,32 @@ There are several ways to find the IP address:
 
 1. **Change the Default Password:** Immediately change the default password for security:
 
-    ```bash
-    passwd
-    ```
+   ```bash
+   passwd
+   ```
 
-    Follow the prompts to set a new, strong password.
+   Follow the prompts to set a new, strong password.
+
 2. **Update System Packages:** Ensure your system is up-to-date:
 
-    ```bash
-    sudo apt update
-    sudo apt full-upgrade -y
-    ```
+   ```bash
+   sudo apt update
+   sudo apt full-upgrade -y
+   ```
 
 3. **Configure Raspberry Pi Settings (Optional):** Run the configuration tool:
 
-    ```bash
-    sudo raspi-config
-    ```
+   ```bash
+   sudo raspi-config
+   ```
 
-    Here you can configure options like:
-    * Localization (Timezone, Keyboard Layout)
-    * Network Options (Hostname)
-    * Interfacing Options (Enable VNC, SPI, I2C if needed)
-    * Advanced Options (Expand Filesystem - usually done automatically now)
-    Select "Finish" when done. You might need to reboot (`sudo reboot`).
+   Here you can configure options like:
+
+   - Localization (Timezone, Keyboard Layout)
+   - Network Options (Hostname)
+   - Interfacing Options (Enable VNC, SPI, I2C if needed)
+   - Advanced Options (Expand Filesystem - usually done automatically now)
+     Select "Finish" when done. You might need to reboot (`sudo reboot`).
 
 ## Conclusion
 
