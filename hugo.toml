@@ -54,6 +54,7 @@ weight = 30
 [[menu.main]]
 identifier = "about-me"
 name = "About"
+url = "#"
 weight = 40
 [[menu.main]]
 identifier = "about-page"
