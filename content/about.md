@@ -4,8 +4,6 @@ date: 2025-04-29
 draft: false
 ---
 
-# About Me
-
 Hi, I’m Bobby — a tech enthusiast and system tinkerer who values control, performance, and minimalism.
 
 I enjoy working close to the metal. Whether it's customizing Android at the root level, fine-tuning Arch Linux setups, or building embedded systems from scratch, I’m drawn to challenges that require understanding how things really work. I prefer tools that are efficient, transparent, and respect the user's control.
