@@ -1,6 +1,6 @@
 ---
 title: "Bash Configuration"
-date: 2024-05-14
+date: 2025-04-29
 draft: false
 ---
 
