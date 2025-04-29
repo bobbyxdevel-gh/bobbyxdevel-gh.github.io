@@ -1,0 +1,51 @@
+baseURL = 'https://bobbyx.de/'
+\
+languageCode = 'en-us'
+title = 'Bobbyx.de'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = "auto" # auto, light, dark
+  profileMode:
+    enabled = true
+    title = "Bobbyx.de" # Shown under image
+    subtitle = "Showcasing dotfiles, docs, and thoughts"
+    # imageUrl = "<relative path to image>" # Optional
+    # imageWidth = 120 # Optional
+    # imageHeight = 120 # Optional
+    # imageTitle = "My Profile Picture" # Optional
+    buttons:
+      - name: Dotfiles
+        url: "/dotfiles"
+      - name: Docs
+        url: "/docs"
+      - name: Blog
+        url: "/blog"
+      - name: About
+        url: "/about"
+
+  socialIcons: # Optional
+    - name: "github"
+      url: "https://github.com/bobbyxdevel-gh" # Replace with your username
+
+[menu]
+  [[menu.main]]
+    identifier = "dotfiles"
+    name = "Dotfiles"
+    url = "/dotfiles/"
+    weight = 10
+  [[menu.main]]
+    identifier = "docs"
+    name = "Docs"
+    url = "/docs/"
+    weight = 20
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
