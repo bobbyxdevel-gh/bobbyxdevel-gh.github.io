@@ -54,7 +54,7 @@ weight = 30
 
 # Parent Menu Item (Dropdown Title)
 [[menu.main]]
-identifier = "about"
+identifier = "about-me"
 name = "About"
 # No URL - makes it a dropdown header
 weight = 40
@@ -64,7 +64,7 @@ weight = 40
 identifier = "about-page"
 name = "About Me"
 url = "/about/"
-parent = "about"
+parent = "about-me"
 weight = 10
 
 # Child Item 2: Uses Page
@@ -72,5 +72,5 @@ weight = 10
 identifier = "uses-page"
 name = "Uses"
 url = "/uses/"
-parent = "about"
+parent = "about-me"
 weight = 20
