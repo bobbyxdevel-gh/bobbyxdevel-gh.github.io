@@ -8,7 +8,7 @@ defaultTheme = "auto" # auto, light, dark
 
 [params.profileMode]
 enabled = true
-title = "Bobbyx.de" # Shown under image
+title = "bobbyx.de" # Shown under image
 subtitle = "Showcasing dotfiles, docs, and thoughts"
 # imageUrl = "<relative path to image>" # Optional
 # imageWidth = 120 # Optional
