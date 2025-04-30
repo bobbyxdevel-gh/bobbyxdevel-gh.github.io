@@ -33,7 +33,7 @@ url = "#"
 
 [[params.socialIcons]] # Optional
 name = "github"
-url = "https://github.com/bobbyxdevel-gh" # Replace with your username
+url = "https://github.com/bobbyxdevel-gh/" # Replace with your username
 
 [menu]
 [[menu.main]]
