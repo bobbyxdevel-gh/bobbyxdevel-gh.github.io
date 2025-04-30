@@ -6,7 +6,8 @@ draft: false
 
 ## Introduction
 
-This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a headless server, meaning it will operate without a connected monitor, keyboard, or mouse.
+This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a headless server, meaning it will operate
+without a connected monitor, keyboard, or mouse.
 
 ## Prerequisites
 
@@ -19,12 +20,15 @@ This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a 
 
 ## Step 1: Download Raspberry Pi OS Lite
 
-1. Go to the official Raspberry Pi website: [https://www.raspberrypi.com/software/operating-systems/](https://www.raspberrypi.com/software/operating-systems/)
-2. Download the "Raspberry Pi OS Lite" image. This version doesn't include a desktop environment, which is ideal for a server.
+1. Go to the official Raspberry Pi
+   website: [https://www.raspberrypi.com/software/operating-systems/](https://www.raspberrypi.com/software/operating-systems/)
+2. Download the "Raspberry Pi OS Lite" image. This version doesn't include a desktop environment, which is ideal for a
+   server.
 
 ## Step 2: Flash the OS Image to the MicroSD Card
 
-1. Download and install the Raspberry Pi Imager: [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/)
+1. Download and install the Raspberry Pi
+   Imager: [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/)
 2. Insert the MicroSD card into your computer's SD card reader.
 3. Open the Raspberry Pi Imager.
 4. Click "CHOOSE OS" and select the downloaded Raspberry Pi OS Lite image file (`.img` or `.zip`).
@@ -34,13 +38,17 @@ This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a 
 ## Step 3: Enable SSH for Headless Setup
 
 1. Once the flashing is complete, **do not eject the MicroSD card yet**.
-2. Open the file explorer and navigate to the boot partition of the MicroSD card (it should be labeled "boot" or similar).
-3. Create an empty file named `ssh` (no file extension) in the root directory of this boot partition. This enables the SSH server on the first boot.
+2. Open the file explorer and navigate to the boot partition of the MicroSD card (it should be labeled "boot" or
+   similar).
+3. Create an empty file named `ssh` (no file extension) in the root directory of this boot partition. This enables the
+   SSH server on the first boot.
 
 ## Step 4: Configure Wi-Fi (Optional, if not using Ethernet)
 
-1. If you plan to use Wi-Fi, create another file named `wpa_supplicant.conf` in the root directory of the boot partition.
-2. Open this file with a plain text editor and add the following content, replacing `"Your_SSID"` and `"Your_Password"` with your actual Wi-Fi network name and password:
+1. If you plan to use Wi-Fi, create another file named `wpa_supplicant.conf` in the root directory of the boot
+   partition.
+2. Open this file with a plain text editor and add the following content, replacing `"Your_SSID"` and `"Your_Password"`
+   with your actual Wi-Fi network name and password:
 
    ```conf
    country=US # Change to your 2-letter ISO country code (e.g., GB, DE, FR)
@@ -66,8 +74,10 @@ This guide provides a step-by-step process for setting up a Raspberry Pi 4 as a 
 
 There are several ways to find the IP address:
 
-- **Router Interface:** Log in to your router's web interface and look for connected devices. The Raspberry Pi might appear with the hostname "raspberrypi".
-- **Network Scanner:** Use a network scanning tool (like `nmap` on Linux/macOS or "Advanced IP Scanner" on Windows) to scan your network for devices.
+- **Router Interface:** Log in to your router's web interface and look for connected devices. The Raspberry Pi might
+  appear with the hostname "raspberrypi".
+- **Network Scanner:** Use a network scanning tool (like `nmap` on Linux/macOS or "Advanced IP Scanner" on Windows) to
+  scan your network for devices.
 - **Bonjour/Avahi:** If your computer supports it, you might be able to connect using the hostname `raspberrypi.local`.
 
 ## Step 7: Connect via SSH
@@ -122,4 +132,6 @@ There are several ways to find the IP address:
 
 ## Conclusion
 
-Your Raspberry Pi 4 is now set up as a headless server! You can disconnect the Ethernet cable if you configured Wi-Fi and continue accessing it via SSH over your network. You can now install server software like web servers (Apache, Nginx), file servers (Samba), media servers (Plex), or use it for various projects.
+Your Raspberry Pi 4 is now set up as a headless server! You can disconnect the Ethernet cable if you configured Wi-Fi
+and continue accessing it via SSH over your network. You can now install server software like web servers (Apache,
+Nginx), file servers (Samba), media servers (Plex), or use it for various projects.
