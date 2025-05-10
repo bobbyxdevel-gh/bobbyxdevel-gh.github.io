@@ -35,36 +35,36 @@ url = "/about/"
 name = "github"
 url = "https://github.com/bobbyxdevel-gh/" # Replace with your GitHub username for the profile link
 
-[menu]
-[[menu.main]]
-identifier = "dotfiles"
-name = "Dotfiles"
-url = "/dotfiles/"
-weight = 10
-[[menu.main]]
-identifier = "docs"
-name = "Docs"
-url = "/docs/"
-weight = 20
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
-weight = 30
-[[menu.main]]
-identifier = "about-me"
-name = "About"
-url = "#"
-weight = 40
-[[menu.main]]
-identifier = "about-page"
-name = "About Me"
-url = "/about/"
-parent = "about"
-weight = 10
-[[menu.main]]
-identifier = "uses-page"
-name = "Uses"
-url = "/uses/"
-parent = "about-me"
-weight = 20
+# [menu]
+# [[menu.main]]
+# identifier = "dotfiles"
+# name = "Dotfiles"
+# url = "/dotfiles/"
+# weight = 10
+# [[menu.main]]
+# identifier = "docs"
+# name = "Docs"
+# url = "/docs/"
+# weight = 20
+# [[menu.main]]
+# identifier = "blog"
+# name = "Blog"
+# url = "/blog/"
+# weight = 30
+# [[menu.main]]
+# identifier = "about-me"
+# name = "About"
+# url = "#"
+# weight = 40
+# [[menu.main]]
+# identifier = "about-page"
+# name = "About Me"
+# url = "/about/"
+# parent = "about"
+# weight = 10
+# [[menu.main]]
+# identifier = "uses-page"
+# name = "Uses"
+# url = "/uses/"
+# parent = "about-me"
+# weight = 20
