@@ -8,9 +8,9 @@ defaultTheme = "auto" # auto, light, dark
 
 [params.profileMode]
 enabled = true
-title = "bobbyx.de"                                   # Shown under image
+title = "bobbyx.de" # Shown under image
 subtitle = "Showcasing dotfiles, docs, and thoughts."
-# imageUrl = "<relative path to image>" # Optional
+# imageUrl = "images/profile.jpg" # Example: Use a valid relative path to an image file, Optional
 # imageWidth = 120 # Optional
 # imageHeight = 120 # Optional
 # imageTitle = "My Profile Picture" # Optional
@@ -29,11 +29,11 @@ url = "/blog"
 
 [[params.profileMode.buttons]]
 name = "About"
-url = "#"
+url = "/about/"
 
 [[params.socialIcons]] # Optional
 name = "github"
-url = "https://github.com/bobbyxdevel-gh/" # Replace with your username
+url = "https://github.com/bobbyxdevel-gh/" # Replace with your GitHub username for the profile link
 
 [menu]
 [[menu.main]]
@@ -60,7 +60,7 @@ weight = 40
 identifier = "about-page"
 name = "About Me"
 url = "/about/"
-parent = "about-me"
+parent = "about"
 weight = 10
 [[menu.main]]
 identifier = "uses-page"
