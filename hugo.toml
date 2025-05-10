@@ -29,7 +29,7 @@ url = "/blog"
 
 [[params.profileMode.buttons]]
 name = "About"
-url = "/about/"
+url = "/about"
 
 [[params.socialIcons]] # Optional
 name = "github"
@@ -54,7 +54,7 @@ weight = 30
 [[menu.main]]
 identifier = "about-me"
 name = "About"
-url = "#"
+url = "/about/"
 weight = 40
 # [[menu.main]]
 # identifier = "about-page"
