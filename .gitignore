@@ -1,0 +1,3 @@
+# Ignore local editor settings and Hugo build artifacts
+.vscode/
+.hugo_build.lock

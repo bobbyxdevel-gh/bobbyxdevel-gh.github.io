@@ -10,10 +10,6 @@ defaultTheme = "auto" # auto, light, dark
 enabled = true
 title = "bobbyx.de" # Shown under image
 subtitle = "Showcasing dotfiles, docs, and thoughts."
-# imageUrl = "images/profile.jpg" # Example: Use a valid relative path to an image file, Optional
-# imageWidth = 120 # Optional
-# imageHeight = 120 # Optional
-# imageTitle = "My Profile Picture" # Optional
 
 [[params.profileMode.buttons]]
 name = "Dotfiles"
@@ -56,16 +52,3 @@ identifier = "about-me"
 name = "About"
 url = "/about/"
 weight = 40
-# [[menu.main]]
-# identifier = "about-page"
-# name = "About Me"
-# url = "/about/"
-# parent = "about"
-# weight = 10
-# [[menu.main]]
-# identifier = "uses-page"
-# name = "Uses"
-# url = "/uses/"
-# parent = "about-me"
-# weight = 20
-# [[menu.main]]
