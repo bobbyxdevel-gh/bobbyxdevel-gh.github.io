@@ -1,4 +1,4 @@
-baseURL = 'https://bobbyx.de/'
+baseURL = 'https://bobbyxdevel-gh.github.io/'
 languageCode = 'en-us'
 title = 'bobbyx.de'
 theme = 'PaperMod'
